@@ -1,0 +1,145 @@
+/* common.css */
+* {
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul { list-style-type: none;}
+html, body {
+  height: 100%;
+}
+body {
+  color: #666;
+  /* font-family: 'Belleza', sans-serif; */
+  font-family: 'Noto Sans KR', sans-serif;
+  line-height: 1.8;
+}
+h1, h2, h3, h4 {
+  font-family: 'Belleza', sans-serif;
+}
+ins {text-decoration: none;}
+button { 
+  background: none;
+  border: none;
+}
+section{
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#main_header {
+  position: absolute;
+  color: #fff;
+  width: 100%;  
+}
+
+#title {
+  height: 100%;
+  background-image: url("../images/title_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  margin-bottom: 50px;
+}
+#title .title {
+  /* outline: 1px solid red; */
+  position: absolute;
+  width: 80%;
+  left: 50%; top: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+#title .title > h2 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+#event .title >h2{
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+#title .title > p, #event .title > p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.cta{
+  width: 140px;height: 55px;
+  background: #222222;
+  font-size: 12px;
+  /* 패딩은 밀려서 아래 두개로  적용 */
+  line-height: 55px;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.cta:hover{
+  background: rgba(34,44,34,0.9);
+}
+
+#brand{
+  /* 소개글 좌우 여백을 두어 집중하게 배치 */
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+/* 이벤트 섹션 */
+#event{
+  position: relative;
+  height: 400px;
+  background: #ccc;
+  background-image: url("http://placeimg.com/1920/1080/people/grayscale");
+  background-size:cover;
+  background-position: center;
+  /* bg 안에서 페럴렉스효과? */
+  background-attachment: fixed;
+}
+#event .title{
+  width: 66%;
+  /* outline: 1px solid red; */
+  position: absolute;
+  left: 50%; top: 50%;
+  transform:translate(-50%, -50%);
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+}
+
+/* news 섹션 */
+#news article{
+  height: 300px;
+  margin-bottom: 20px;
+  color: #fff;
+  display: flex;  /*flex layout 설정*/
+}
+#news article{
+  /* inline 아님 박스모델 설정에서 씀 부모에 flex */
+  align-items: center; /*수직 중앙정렬*/
+  justify-content: center; /*수평 중앙정렬*/
+}
+#news article h2{
+  /* outline: 1px solid red; */
+}
+#news article:first-child{
+  background-image: url("http://placeimg.com/600/300/5");
+  background-size: cover;
+  background-position: center;
+}
+#news article:last-child{
+  background-image: url("http://placeimg.com/600/300/9");
+  background-size: cover;
+  background-position: center;
+}
+
+/* bxslider */
+.slider{
+  width: 100%;
+}
+.bx-wrapper{
+  border: none !important;
+  box-shadow: none !important;
+}
+.slider img{
+
+}
